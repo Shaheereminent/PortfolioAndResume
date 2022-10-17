@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Default / Design System */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+.section_margin {
+    margin: 100px 80px 0 80px;
+}
+
+span {
+    color: #141414;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 0.96;
+}
+
+h1 {
+    color: #141414;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #141414;
+}
+
+h3 {
+    color: #525252;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin: 56px auto 32px auto;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+    columns: #333333;
+}
+
+p {
+    color: #525252;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.medium_body_p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #525252;
+}
+
+.subtitle_medium {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.subtitle_medium_indicator {
+    color: #959595;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.subtitle_regular {
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 80px 0 80px;
+    align-items: center;
+}
+
+nav a {
+    height: 90px;
+}
+
+.social_links_wrapper {
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease-in-out;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.social_links_wrapper:hover {
+    border: 2px solid rgba(0, 0, 0, 0.00);
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.social_links_wrapper a {
+    height: 36px;
+}
+
+.navbar_socials_link {
+    background-color: transparent;
+}
+
+.logo {
+    height: 90px;
+    width: 90px;
+    transition: all 0.4s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.04);
+}
+
+.email_wrapper {
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease-in-out;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.email_wrapper:hover {
+    border: 2px solid rgba(0, 0, 0, 0.00);
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+/* Hero Section Styling */
+.hero_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.line1_heading1 {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.line2_heading1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 36px;
+}
+
+.scrolldown_wrapper {
+    margin-top: 64px;
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.00);
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.hero_right_img {
+    height: 460px;
+    width: 628px;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+.hero_right_img:hover {
+    transform: scale(1.02);
+}
+
+/* Experience Section */
+.all-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(401px, 1fr));
+    gap: 24px;
+    justify-content: space-between;
+    margin: 48px 0;
+}
+
+.card {
+    background-color: #fff;
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.parent-dot {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background-color: #E4D6FF;
+    border-radius: 50%;
+}
+
+.child-dot {
+    height: 8px;
+    width: 8px;
+    background-color: #5800FF;
+    border-radius: 50%;
+}
+
+.company-name h2 {
+    color: #141414;
+    margin-bottom: 0;
+}
+
+
+.job-detail h4 {
+    color: #333333;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.left-line {
+    height: 88px;
+    width: 4px;
+    background-color: #5800FF;
+    border-radius: 2px;
+    margin-left: 0.375rem;
+    flex-shrink: 0;
+}
+
+.job-detail {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.note_container_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 32px;
+    transition: all 0.4s ease-in-out;
+}
+
+.note_container_wrapper:hover {
+    transform: scale(1.02);
+}
+
+.note_heading_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.note_paragraph {
+    width: 500px;
+    margin-left: 57px;
+}
+
+.note_side_project {
+    border-radius: 8px;
+    width: 500px;
+}
+
+/* Skills Styling */
+.skill_heading_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.skills_card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(401px, 1fr));
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.skills_card {
+    height: 300px;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skills_card:hover {
+    transform: scale(1.02);
+}
+
+.uiux_project1 {
+    background-image: url('/Resources/uxdesign1.png');
+}
+
+.uiux_project2 {
+    background-image: url('/Resources/uxdeisgn2.png');
+}
+
+.uiux_project3 {
+    background-image: url('/Resources/dashboarddark.png');
+}
+
+.frontend_project1 {
+    background-image: url('/Resources/frontend1.png');
+}
+
+.frontend_project2 {
+    background-image: url('/Resources/frontend2.png');
+}
+
+.frontend_project3 {
+    background-image: url('/Resources/frontend3.png');
+}
+
+.ios_project1 {
+    background-image: url('/Resources/ios1.webp');
+}
+
+.ios_project2 {
+    background-image: url('/Resources/ios2.webp');
+}
+
+.ios_project3 {
+    background-image: url('/Resources/ios3.webp');
+}
+
+/* Footer Styling */
+.footer_wrapper {
+    margin: 100px 0 0 0;
+    background-color: #fff;
+    border-radius: 40px 40px 0px 0px;
+    padding: 56px;
+    text-align: center;
+}
+
+.footer_wrapper h1 {
+    margin: 6px 0 40px 0;
+}
